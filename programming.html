@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>Benedette Labang</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <script>
+        let x = 10
+        function getCurrentDateAndTime() {
+            return Date()
+        }
+        function add() {
+            let x = document.getElementById("x").value
+            x = Number(x)
+            let  y = document.getElementById("y").value     
+            y = Number(y)
+            result = x + y
+            document.getElementById("result").innerHTML = result
+            return result
+        }
+        function subtract() {
+            let x = document.getElementById("x").value
+            x = Number(x)
+            let  y = document.getElementById("y").value     
+            y = Number(y)
+            result = x - y
+            document.getElementById("result").innerHTML = result
+            return result
+        }
+        function multiply() {
+            let x = document.getElementById("x").value
+            x = Number(x)
+            let  y = document.getElementById("y").value     
+            y = Number(y)
+            result = x * y
+            document.getElementById("result").innerHTML = result
+            return result
+        }
+        function division() {
+            let x = document.getElementById("x").value
+            x = Number(x)
+            let  y = document.getElementById("y").value     
+            y = Number(y)
+            result = x / y
+            document.getElementById("result").innerHTML = result
+            return result
+        }
+        function powerof() {
+            let x = document.getElementById("x").value
+            x = Number(x)
+            let  y = document.getElementById("y").value     
+            y = Number(y)
+            result = x ** y
+            document.getElementById("result").innerHTML = result
+            return result
+        }
+        function test() {
+            return x
+        }
+    </script>
+    <body>
+        <h1>My programming exercises</h1>
+        <button type="button" onclick="document.getElementById('demo').innerHTML = test()">
+            Click me to display Date and Time.</button>
+        <p id="demo">hello</p>
+        <label for="x">x:</label><br>
+        <input type="text" id="x" name="x" value=""><br>
+        <label for="y">y:</label><br>
+        <input type="text" id="y" name="y" value=""><br><br>
+        <input type="submit" onclick="add()" value="add">
+        <input type="submit" onclick="subtract()" value="subtract">
+        <input type="submit" onclick="multiply()" value="multiply">
+        <input type="submit" onclick="division()" value="division">
+        <input type="submit" onclick="powerof()" value="powerof">
+        <p id="result">hello</p>
+
+    </body>
+</html>
