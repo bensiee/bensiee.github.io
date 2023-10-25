@@ -59,8 +59,15 @@
     </script>
     <body>
         <h1>My programming exercises</h1>
-        <button type="button" onclick="document.getElementById('demo').innerHTML = test()">
-            Click me to display Date and Time.</button>
+        <p class = "menu">
+            <a href="index.html">Home</a> |
+            <a href="programming.html">Programming</a> |
+            <a href="photos.html">Photos</a> | 
+        </p>
+        <p>
+            <button type="button" onclick="document.getElementById('demo').innerHTML = getCurrentDateAndTime()">
+                Click me to display Date and Time.</button>
+        </p>
         <p id="demo">hello</p>
         <label for="x">x:</label><br>
         <input type="text" id="x" name="x" value=""><br>
@@ -72,6 +79,5 @@
         <input type="submit" onclick="division()" value="division">
         <input type="submit" onclick="powerof()" value="powerof">
         <p id="result">hello</p>
-
     </body>
 </html>
